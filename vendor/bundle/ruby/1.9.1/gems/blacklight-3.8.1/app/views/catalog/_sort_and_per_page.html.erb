@@ -1,0 +1,7 @@
+<div id="sortAndPerPage">  
+	<% unless @response.total < 2 %>
+    <%= render :partial => 'sort_widget' %>
+
+    <%= render :partial => 'per_page_widget' %>
+	<% end %>
+</div>
